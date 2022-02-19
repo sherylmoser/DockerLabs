@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 app.use(express.static(__dirname + '/public'));
 
-const dbURL = 'mongodb://10.20.105.225/userManagement';
+const dbURL = 'mongodb://192.168.84.20/userManagement';
 
 mongoose.connect(dbURL);
 const udb = mongoose.connection;
